@@ -11,7 +11,7 @@ const Pregunta = () => {
   const handlePreguntaSubmit = async () => {
     try {
       setRespondiendo(true);
-      const response = await axios.post<{ respuesta: string }>('https://fss671f1-3000.brs.devtunnels.ms/preguntar', { pregunta });
+      const response = await axios.post<{ respuesta: string }>('https://fss671f1-3001.brs.devtunnels.ms/preguntar', { pregunta });
       if (response.data && response.data.respuesta) {
         const respuestaJSON: string = response.data.respuesta;
         const respuestaArray: string[] = respuestaJSON.split("\n").filter(item => item.trim().length > 0);
