@@ -41,7 +41,7 @@ const Pregunta = () => {
         {respondiendo ? 'Respondiendo...' : 'Enviar pregunta'}
       </button>
       <button onClick={handleVerAnteriores}>Ver Respuestas Anteriores</button>
-      {respuesta && <div>Respuesta: {respuesta}</div>}
+      {respuesta && <div>UpdsGo:  {respuesta}</div>}
     </div>
   );
 };
